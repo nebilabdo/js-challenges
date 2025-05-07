@@ -45,7 +45,7 @@ You are given an array of numbers where numbers are missing from a sequence. The
 
 
 // Sample challenge: Find the Missing Numbers in a Sequence
-
+```js
 const findMissingNumbers = arr => {
   const fullRange = [...Array(arr[arr.length - 1] - arr[0] + 1).keys()].map(i => i + arr[0]);
   return fullRange.filter(num => !arr.includes(num));
