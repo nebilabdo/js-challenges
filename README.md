@@ -9,7 +9,7 @@ This project is dedicated to solving at least one JavaScript challenge per day t
 ## 📌 What’s Inside?
 
 Each folder includes:
-- A clearly named challenge (e.g., `find-top-student`)
+- A clearly named challenge (e.g., `find-the-missing-numbers`)
 - Well-commented JavaScript code
 - A solution that uses modern JS practices like `map`, `filter`, and `reduce`
 
@@ -17,34 +17,41 @@ Each folder includes:
 
 ## 🗂️ Folder Structure
 
-Each challenge is stored in its own sub-folder under `/js-challenges`, with its own `script.js` file and optionally a `README.md` for explanations or notes.
+- `/js-challenges/`
+  - Contains individual folders for each challenge.
+  - Each folder includes:
+    - A `script.js` file with the solution.
+    - Optionally a `README.md` with problem description, code explanation, and additional notes.
+
+---
+
 ## 🎯 Goal
 
-
-
- 🎯 Goal:
- - Practice JavaScript consistently every day.
- - Improve logic building and problem-solving abilities.
- - Get comfortable with methods like map(), filter(), reduce().
- - Build habits to prepare for coding interviews and real projects.
+- **Consistency**: Solve one challenge every day.
+- **Problem-Solving**: Build a strong foundation of problem-solving skills.
+- **JavaScript Mastery**: Get comfortable with core methods like `map()`, `filter()`, `reduce()`, and ES6+ syntax.
+- **Interview Prep**: Prepare for coding interviews and real-world projects.
 
 ---
 
 ## 💻 Sample Challenge
 
-### 📎 Challenge: Average of Positive Numbers
+### 📎 Challenge: Find the Missing Numbers
 
 **Problem**:  
-Given an array of numbers, calculate the average of all positive numbers.  
-If there are no positive numbers, return `0`.
+You are given an array of numbers where numbers are missing from a sequence. The numbers in the array are sorted in increasing order. Write a function that returns an array of the missing numbers in the sequence from the smallest number to the largest number.
 
-**Code**:
-```js
-const data = [4, -2, 7, -1, 0, 5];
-const avgPositive = data
-  .filter(n => n > 0)
-  .reduce((acc, val, _, arr) => acc + val / arr.length, 0);
-
-console.log(`Average of positive numbers: ${avgPositive.toFixed(2)}`); // Output: 5.33
+**Example**:
 
 
+// Sample challenge: Find the Missing Numbers in a Sequence
+
+const findMissingNumbers = arr => {
+  const fullRange = [...Array(arr[arr.length - 1] - arr[0] + 1).keys()].map(i => i + arr[0]);
+  return fullRange.filter(num => !arr.includes(num));
+};
+
+const inputArray = [1, 3, 5, 6, 8];
+const result = findMissingNumbers(inputArray);
+
+console.log(result); 
