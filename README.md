@@ -13,15 +13,7 @@ Each folder includes:
 - Well-commented JavaScript code
 - A solution that uses modern JS practices like `map`, `filter`, and `reduce`
 
----
 
-## 🗂️ Folder Structure
-
-- `/js-challenges/`
-  - Contains individual folders for each challenge.
-  - Each folder includes:
-    - A `script.js` file with the solution.
-    - Optionally a `README.md` with problem description, code explanation, and additional notes.
 
 ---
 
