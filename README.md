@@ -1,43 +1,49 @@
 # 🧠 JavaScript Daily Challenges
 
-Welcome to my **JavaScript Daily Challenge** repository!
+![JavaScript Daily Challenges](https://img.shields.io/badge/JavaScript-Daily_Challenges-blue?logo=javascript&logoColor=white)
 
-This project is dedicated to solving at least one JavaScript challenge per day to sharpen problem-solving skills, build muscle memory with core JavaScript methods, and track growth as a future **MERN Stack Developer** (specializing in Front-End).
+Welcome to my **JavaScript Daily Challenge** repository! 🚀
 
----
-
-## 📌 What’s Inside?
-
-Each folder contains a collection of challenges related to a specific topic or concept. These challenges involve solving problems using modern JavaScript practices like `map`, `filter`, `reduce`, and other ES6+ features.
-
-### Folder Structure:
-
-- **`array/`**: Challenges related to array manipulation and algorithms.
-- **`string/`**: Challenges focused on string manipulation and algorithms.
-- **`math/`**: Mathematical challenges, including number theory and arithmetic.
-- **`reduce/`**: Challenges that utilize the `reduce` method to solve problems.
-- **`leetcode/`**: LeetCode-inspired problems to practice coding interview questions.
-- **`projects/`**: Personal projects built using JavaScript, ranging from simple applications to complex solutions.
+This project is a collection of **JavaScript challenges** that I tackle every day to sharpen my problem-solving skills, improve my understanding of core JavaScript methods, and track my growth as a future **MERN Stack Developer** (specializing in Front-End). 
 
 ---
 
-## 🎯 Goal
+## 📌 What's Inside?
 
-- **Consistency**: Solve one challenge every day.
-- **Problem-Solving**: Build a strong foundation of problem-solving skills.
-- **JavaScript Mastery**: Get comfortable with core methods like `map()`, `filter()`, `reduce()`, and ES6+ syntax.
-- **Interview Prep**: Prepare for coding interviews and real-world projects.
+This repository contains various challenges focused on different topics and concepts. Each challenge is designed to build muscle memory with core JavaScript methods like `map()`, `filter()`, `reduce()`, and ES6+ features. These challenges will help you practice problem-solving skills and prepare for coding interviews and real-world projects.
+
+### 🗂 Folder Structure
+
+- **`array/`**: Challenges focused on **array manipulation** and algorithms.
+- **`string/`**: Challenges focused on **string manipulation** and algorithms.
+- **`math/`**: **Mathematical challenges**, including number theory and arithmetic operations.
+- **`reduce/`**: Challenges utilizing the powerful `reduce` method for solving problems.
+- **`leetcode/`**: Challenges inspired by **LeetCode**, perfect for preparing for coding interviews.
+- **`projects/`**: Personal projects built using JavaScript, ranging from simple applications to full-scale solutions.
+
+---
+
+## 🎯 Goals
+
+The goal of this repository is simple:
+
+- **🌱 Consistency**: Solve at least one challenge every day.
+- **🧩 Problem-Solving**: Strengthen your problem-solving and algorithmic thinking.
+- **💻 JavaScript Mastery**: Master core JavaScript methods like `map()`, `filter()`, `reduce()`, and ES6+ syntax.
+- **🎯 Interview Prep**: Build a strong foundation for coding interviews and real-world projects.
 
 ---
 
 ## 💻 Sample Challenge
 
-### 📎 Challenge: Find the Missing Numbers
+### 📎 **Challenge**: Find the Missing Numbers
 
 **Problem**:  
-You are given an array of numbers where numbers are missing from a sequence. The numbers in the array are sorted in increasing order. Write a function that returns an array of the missing numbers in the sequence from the smallest number to the largest number.
+Given a sorted array of numbers, some numbers are missing from a sequence. Write a function that returns an array of the missing numbers from the sequence in ascending order.
 
-**Example**:
+---
+
+### Example:
 
 ```js
 // Sample challenge: Find the Missing Numbers in a Sequence
