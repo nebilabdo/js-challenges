@@ -8,12 +8,16 @@ This project is dedicated to solving at least one JavaScript challenge per day t
 
 ## 📌 What’s Inside?
 
-Each folder includes:
-- A clearly named challenge (e.g., `find-the-missing-numbers`)
-- Well-commented JavaScript code
-- A solution that uses modern JS practices like `map`, `filter`, and `reduce`
+Each folder contains a collection of challenges related to a specific topic or concept. These challenges involve solving problems using modern JavaScript practices like `map`, `filter`, `reduce`, and other ES6+ features.
 
+### Folder Structure:
 
+- **`array/`**: Challenges related to array manipulation and algorithms.
+- **`string/`**: Challenges focused on string manipulation and algorithms.
+- **`math/`**: Mathematical challenges, including number theory and arithmetic.
+- **`reduce/`**: Challenges that utilize the `reduce` method to solve problems.
+- **`leetcode/`**: LeetCode-inspired problems to practice coding interview questions.
+- **`projects/`**: Personal projects built using JavaScript, ranging from simple applications to complex solutions.
 
 ---
 
@@ -35,9 +39,7 @@ You are given an array of numbers where numbers are missing from a sequence. The
 
 **Example**:
 
-
 ```js
-
 // Sample challenge: Find the Missing Numbers in a Sequence
 function findMissingNumber(arr) {
   if (!Array.isArray(arr)) return;
