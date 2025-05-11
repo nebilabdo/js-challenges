@@ -56,4 +56,5 @@ function getCharCodeSum(str) {
 };
 console.log(findTheDifferenceWithforof("abcd", "abcde")); 
 
-  
+
+
