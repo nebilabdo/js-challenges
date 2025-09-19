@@ -15,3 +15,11 @@ function checkingSalaries(prop){
     
 }
 console.log(checkingSalaries(salaries));
+
+
+//or in simple 
+let sum=0;
+for(let key in salaries){
+  sum+=salaries[key];
+}
+console.log(sum);
