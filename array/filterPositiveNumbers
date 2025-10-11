@@ -1,0 +1,21 @@
+function filterPositiveNumbers() {
+  let numbers = [];
+
+  while (true) {
+    let value = prompt("Enter a number:", 0);
+    if (!isFinite(value) || value === null || value === "") break;
+    numbers.push(+value);
+  }
+
+  let positiveNumbers = [];
+  for (let item of numbers) {
+    if (item > 0) {
+      positiveNumbers.push(item);
+    }
+  }
+
+  return { allNumbers: numbers, positiveNumbers };
+}
+
+let result = filterPositiveNumbers();
+alert(`All numbers: ${result.allNumbers}\nPositive numbers: ${result.positiveNumbers}`);
