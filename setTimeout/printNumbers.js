@@ -24,3 +24,13 @@ function printNumbers(from, to){
 }
 
 printNumbers(2,8)
+//most simpler way 
+function printNumbers(from, to) {  
+  let id = setInterval(() => {
+    alert(from++);
+    if (from > to) {
+      clearInterval(id);
+    }
+  }, 1000);
+}
+printNumbers(2,8)
