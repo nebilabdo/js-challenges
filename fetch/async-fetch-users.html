@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        async function fetchUser(url){
+        try{
+        let userData= await fetch(url)
+    
+        if (!userData.ok) {
+             throw new Error(`HTTP error: ${userData.status}`);
+              }
+        let json=await userData.json()
+        for(let user of json){
+            console.log(`User : ${user.name} (${user.email})`)
+        }
+
+        }
+        catch(er){
+            alert(`Failed to load users: ${er.message}`)
+        }
+        console.log("Done")
+        }
+        fetchUser('https://jsonplaceholder.typicode.com/users')
+        alert('Loading users...')
+    </script>
+</body>
+</html>
