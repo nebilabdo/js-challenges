@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="table">
+  <tr>
+    <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+  </tr>
+  <tr>
+    <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+  </tr>
+  <tr>
+    <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+  </tr>
+  <tr>
+    <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+  </tr>
+  <tr>
+    <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+  </tr>
+</table>
+
+    <script>
+    //  let row=table.rows[0].cells[0].style.backgroundColor = 'red';
+    //     row=table.rows[1].cells[1].style.backgroundColor = 'red';
+    //     row=table.rows[2].cells[2].style.backgroundColor = 'red';
+    //     row=table.rows[3].cells[3].style.backgroundColor = 'red';
+    //     row=table.rows[4].cells[4].style.backgroundColor = 'red';
+    let count=0;
+        for(let row of table.rows){
+            // console.log(row)
+            row.cells[count].style.backgroundColor = 'red'
+            count++;
+        }
+
+    </script>
+</body>
+</html>
